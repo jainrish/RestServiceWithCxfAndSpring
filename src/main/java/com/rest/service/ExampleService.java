@@ -13,6 +13,6 @@ import com.rest.model.Book;
 @Produces("application/json")
 public interface ExampleService {
 	@GET
-    @Path("/{id}")
+    @Path("{id : \\d+}")
     public List<Book> getBook(@PathParam("id") String id);
 }

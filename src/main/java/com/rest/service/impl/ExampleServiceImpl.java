@@ -21,5 +21,4 @@ public class ExampleServiceImpl implements ExampleService{
 		l.add(b2);
 		return l;
 	}
-
 }
