@@ -2,9 +2,6 @@ package com.rest.model;
 
 import java.util.List;
 
-import javax.xml.bind.annotation.XmlRootElement;
-
-@XmlRootElement(name = "Library")
 public class Library {
 	private int booksCount;
 	private String name;

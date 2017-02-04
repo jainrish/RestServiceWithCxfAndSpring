@@ -10,9 +10,15 @@ import javax.ws.rs.Produces;
 import com.rest.model.Book;
 
 @Path("/example")
-@Produces("application/json")
 public interface ExampleService {
+
 	@GET
     @Path("{id : \\d+}")
+	@Produces("application/json")
     public List<Book> getBook(@PathParam("id") String id);
+	
+	@GET
+    @Path("{id : \\d+}/{name}")
+	@Produces("application/xml")
+    public Book getBookXml(@PathParam("id") String id);
 }
